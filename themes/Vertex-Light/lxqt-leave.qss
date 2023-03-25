@@ -1,0 +1,73 @@
+/* The main Leave dialog window */
+QDialog {
+	color:				#3c3c3e;
+	background:			#e9eaed;
+
+	border:				1px solid #b8b8b8;
+}
+
+/* Caption colors */
+QLabel {
+	color:				#3c3c3e;
+	background:			transparent;
+
+	padding:			8px;
+}
+
+/* Available actions - only partially themeable as of LXQt 1.2.x */
+QAbstractItemView {
+	color:				#3c3c3e;
+        background:             	#ffffff;
+
+        border-top:             	1px solid #b0b0af;
+        border-bottom:          	1px solid #a5a5a4;
+        border-left:            	1px solid #a6a6a5;
+        border-right:           	1px solid #a6a6a5;
+
+	border-radius:			0px;
+}
+
+/* Button settings */
+QPushButton {
+	color:                          #3c3c3e;
+
+        background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f2f2f2, stop:1 #e4e5e7);
+
+        border:				3px solid transparent;
+        border-image:			url(assets/buttons/button.png) 3;
+
+        padding-left:                   24px;
+        padding-right:                  24px;
+        padding-top:                    4px;
+        padding-bottom:			4px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+}
+
+QToolButton {
+	color:                          #3c3c3e;
+
+        background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f2f2f2, stop:1 #e4e5e7);
+
+        border:				3px solid transparent;
+        border-image:			url(assets/buttons/button.png) 3;
+
+        padding-left:                   6px;
+        padding-right:                  6px;
+        padding-top:                    4px;
+        padding-bottom:			4px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+}
+
+QPushButton:hover, QToolButton:hover {
+        background:             qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #fcfcfc, stop:1 #e6e6e6);
+        border-image:           url(assets/buttons/hover.png) 3;
+}
+
+QPushButton:pressed, QToolButton:pressed {
+        background:             qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #d8d9d9, stop:1 #f0f0f0);
+        border-image:           url(assets/buttons/active.png) 3;
+}
