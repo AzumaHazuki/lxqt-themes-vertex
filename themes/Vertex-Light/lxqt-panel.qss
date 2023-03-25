@@ -233,13 +233,15 @@ LXQtPanel QMenu QToolButton {
 #DesktopSwitch QToolButton:on:hover,
 #TaskBar QToolButton[urgent="true"]:hover,
 #DesktopSwitch QToolButton[urgent="true"]:hover {
+	color:			#3c3c3e;
 	background:		qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #fcfcfc, stop:1 #e6e6e6);
 	border-image:		url(assets/buttons/hover.png) 3;
 }
 
 #TaskBar QToolButton[urgent="true"],
 #DesktopSwitch QToolButton[urgent="true"] {
-	background:		qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #78a6ff, stop:1 #3173f1);
+	color:			#fdfeff;
+	background:             qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #548efc, stop:1 #78a5fc);
 	border-image:		url(assets/buttons/urgent.png) 3;
 }
 
